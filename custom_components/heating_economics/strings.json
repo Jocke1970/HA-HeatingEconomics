@@ -1,0 +1,20 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Heating Economics",
+        "description": "Configure an estimate-only Wood's vs Wecamp comparison. Electricity price must be SEK/kWh, preferably including fees and taxes.",
+        "data": {
+          "electricity_price_entity": "Electricity price sensor (SEK/kWh)",
+          "power_entity": "Wood's power sensor (W, optional)",
+          "cop": "Assumed COP",
+          "gas_price": "Gas price (SEK/kg)",
+          "gas_energy_kwh_per_kg": "Estimated LPG heat energy (kWh/kg)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Heating Economics is already configured."
+    }
+  }
+}
