@@ -1,0 +1,13 @@
+{
+  "domain": "heating_economics",
+  "name": "Heating Economics",
+  "version": "2026.11.0b1",
+  "documentation": "https://github.com/Jocke1970/HA-HeatingEconomics",
+  "issue_tracker": "https://github.com/Jocke1970/HA-HeatingEconomics/issues",
+  "codeowners": [
+    "@Jocke1970"
+  ],
+  "config_flow": true,
+  "requirements": [],
+  "iot_class": "local_polling"
+}
