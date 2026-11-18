@@ -1,0 +1,21 @@
+name: Python checks
+
+on:
+  push:
+    branches: [dev, beta, main]
+  pull_request:
+
+jobs:
+  calculations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install test dependencies
+        run: python -m pip install pytest
+      - name: Check Python syntax
+        run: python -m compileall -q custom_components tests
+      - name: Run isolated calculations tests
+        run: python -m pytest -q tests/test_calculations.py
